@@ -15,6 +15,35 @@
     <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
-    
+    <header class="header">
+        <div class="header-content conteiner">
+            <div class="img-header">
+                <picture>
+                    <source
+                        sizes="1920w" 
+                        srcset="img/header.avif 1920w"
+                        type="image/avif"
+                    >
+                    <source
+                        sizes="1920w" 
+                        srcset="img/header.webp 1920w"
+                        type="image/webp"
+                    >
+                    <source
+                        sizes="1920w" 
+                        srcset="img/header.png 1920w"
+                        type="image/jpeg"
+                    >
+                    <img loading="lazy" decoding="async" src="img/header.png" lazyalt="imagen" width="500" height="300">
+                </picture>
+            </div>
+            <div class="text-header">
+                <p>Sonido Profecional</p>
+                <h1 class="green-degraded">TechPRO</h1>
+                <p>ad saepe dolore voluptatibus quibusdam recusandae ullam ipsa aliquid, doloremque obcaecati alias excepturi, cupiditate dolores? Fuga quo officiis nulla repellendus! Nesciunt!</p>
+                <p class="price">Desde <span>$299</span></p>
+            </div>
+        </div>
+    </header>
 </body>
 </html>
