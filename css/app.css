@@ -1,13 +1,13 @@
 :root {
-    --primario: #1073ba;
-    --primarioOscuro: hsl(205, 84%, 30%);
-    --secundario: #00da55;
-    --gris: #3b3b3b;
-    --blanco: #ffffff;
-    --negro: #1f1e1e;
-    --grisClaro: #e1e1e1;
+    --primary: #1073ba;
+    --primaryDark: hsl(205, 84%, 30%);
+    --secondary: #00da55;
+    --grey: #3b3b3b;
+    --white: #ffffff;
+    --black: #1f1e1e;
+    --greylight: #e1e1e1;
   
-    --separacion: 5rem;
+    --separation: 5rem;
   
     --fuentePrincipal: "Roboto", sans-serif;
     --fuenteSecundaria: "Lato", sans-serif;
@@ -40,7 +40,7 @@ h2,
 h3 {
     font-weight: 900;
     font-family: var(--fuenteSecundaria);
-    margin: calc( var(--separacion) / 2 ) 0;
+    margin: calc( var(--separation) / 2 ) 0;
 }
 h1 {
     font-size: 4.4rem;
@@ -64,8 +64,8 @@ img {
     color: transparent;
     background: linear-gradient(
       to right,
-      var(--primario) 0%,
-      var(--secundario) 100%
+      var(--primary) 0%,
+      var(--secondary) 100%
     );
     -webkit-background-clip: text;
     background-clip: text;
@@ -73,13 +73,13 @@ img {
 
 /* ==== Header ==== */
 .header {
-    background-color: var(--negro);
-    color: var(--blanco);
+    background-color: var(--black);
+    color: var(--white);
     min-height: 50rem;
 }
 
 .header-content {
-    padding: var(--separacion) 0;
+    padding: var(--separation) 0;
     text-align: center;
 }
 @media (min-width: 768px) {
@@ -123,11 +123,11 @@ img {
 
 /* ==== Icons ==== */
 .icons {
-    padding: var(--separacion) 0;
+    padding: var(--separation) 0;
 }
 .icon {
     text-align: center;
-    margin-bottom: var(--separacion);
+    margin-bottom: var(--separation);
 }
 .icon:last-of-type {
     margin-bottom: 0;
@@ -152,13 +152,13 @@ img {
 .icon h3 {
     margin: 0 0 2rem 0;
     text-transform: uppercase;
-    color: var(--primario);
+    color: var(--primary);
 }
 
 /* ==== About TechPRO ==== */
 .about {
     background-image: 
-        linear-gradient( to bottom, transparent 0%, transparent 50%, var(--negro) 50%, var(--negro) 100%),
+        linear-gradient( to bottom, transparent 0%, transparent 50%, var(--black) 50%, var(--black) 100%),
         url(../img/imagen-mujer.jpg);
     background-size: 
         100%,
@@ -168,13 +168,13 @@ img {
         top;
     background-repeat: no-repeat;
 
-    color: var(--blanco);
-    padding: var(--separacion) 0;
+    color: var(--white);
+    padding: var(--separation) 0;
 }
 @media (min-width: 768px) {
     .about {
         background-image: 
-            linear-gradient( to left, transparent 0%, transparent 50%, var(--negro) 50%, var(--negro) 100%),
+            linear-gradient( to left, transparent 0%, transparent 50%, var(--black) 50%, var(--black) 100%),
             url(../img/imagen-mujer.jpg);
         background-size: 
             100%,
@@ -188,7 +188,7 @@ img {
 @media (min-width: 1440px) {
     .about {
     background-image: 
-        linear-gradient( to right, transparent 0%, transparent 50%, var(--negro) 50%, var(--negro) 100%),
+        linear-gradient( to right, transparent 0%, transparent 50%, var(--black) 50%, var(--black) 100%),
         url(../img/imagen-mujer.jpg);
     background-size: 
         100%,
@@ -202,7 +202,7 @@ img {
 .about-grid {
     display: grid;
     grid-template-rows: repeat( 2, 1fr );
-    row-gap: var(--separacion);
+    row-gap: var(--separation);
 }
 @media (min-width: 768px) {
     .about-grid {
@@ -210,12 +210,12 @@ img {
         row-gap: unset;
 
         grid-template-columns: repeat( 2, 1fr );
-        column-gap: var(--separacion);
+        column-gap: var(--separation);
     }
 }
 @media (min-width: 1440px) {
     .about-grid {
-        column-gap: calc( var(--separacion) * 2 );
+        column-gap: calc( var(--separation) * 2 );
     }
 }
 
@@ -239,11 +239,11 @@ img {
 
 /* ==== models ==== */
 .models {
-    margin: var(--separacion) auto;
+    margin: var(--separation) auto;
 }
 
 .models h2 {
-    color: var(--primario);
+    color: var(--primary);
     text-align: center;
 }
 
@@ -298,7 +298,7 @@ img {
 .model-x,
 .model-y {
     grid-column: 1 / 2;
-    background-color: var(--grisClaro);
+    background-color: var(--greylight);
 }
 
 .model-x {
@@ -311,8 +311,8 @@ img {
 
 .model-z {
     background-image: url(../img/modelo-z.svg);
-    background-color: var(--negro);
-    color: var(--blanco);
+    background-color: var(--black);
+    color: var(--white);
 }
 
 @media (min-width: 768px) {
@@ -337,7 +337,7 @@ img {
 
 .newsletter {
     background-image: 
-        linear-gradient( to bottom, transparent 0%, transparent 48%, var(--negro) 48%, var(--negro) 100%),
+        linear-gradient( to bottom, transparent 0%, transparent 48%, var(--black) 48%, var(--black) 100%),
         url(../img/newsletter.jpg);
     background-size: 
         100%,
@@ -345,8 +345,8 @@ img {
     background-position: top;
     background-repeat: no-repeat;
 
-    color: var(--blanco);
-    padding: var(--separacion) 0;
+    color: var(--white);
+    padding: var(--separation) 0;
 }
 
 @media (min-width: 321px) {
@@ -360,7 +360,7 @@ img {
 @media (min-width: 768px) {
     .newsletter {
         background-image: 
-            linear-gradient( to right, var(--negro) 0%, var(--negro) 50%, transparent 50%, transparent 100%),
+            linear-gradient( to right, var(--black) 0%, var(--black) 50%, transparent 50%, transparent 100%),
             url(../img/newsletter.jpg);
         background-size: 
             100%,
@@ -375,7 +375,7 @@ img {
 @media (min-width: 1440px) {
     .newsletter {
     background-image: 
-    linear-gradient( to left, var(--negro) 0%, var(--negro) 50%, transparent 50%, transparent 100%),
+    linear-gradient( to left, var(--black) 0%, var(--black) 50%, transparent 50%, transparent 100%),
     url(../img/newsletter.jpg);
     background-size: 
         100%,
@@ -396,13 +396,13 @@ img {
         grid-template-rows: unset;
 
         grid-template-columns: repeat( 2, 1fr );
-        column-gap: var(--separacion);
+        column-gap: var(--separation);
     }
 }
 
 @media (min-width: 1440px) {
     .newsletter-grid {
-        column-gap: calc( var(--separacion) * 2 );
+        column-gap: calc( var(--separation) * 2 );
     }
 }
 
@@ -429,7 +429,6 @@ img {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    padding: 1rem;
     font-size: 2rem;
 }
 
@@ -443,13 +442,13 @@ img {
 
 .newsletter-form [type="submit"] {
     text-transform: uppercase;
-    background-color: var(--primario);
-    color: var(--blanco);
+    background-color: var(--primary);
+    color: var(--white);
     cursor: pointer;
     transition-property: background-color;
     transition-duration: 0.3s;
 }
 
 .newsletter-form [type="submit"]:hover {
-    background-color: var(--primarioOscuro);
+    background-color: var(--primaryDark);
 }
