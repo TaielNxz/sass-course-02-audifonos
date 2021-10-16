@@ -29,6 +29,7 @@ body {
 }
 
 /* ==== Globales ==== */
+
 .conteiner {
     max-width: 120rem;
     width: 90%;
@@ -60,6 +61,7 @@ img {
 }
 
 /* ==== Degraded ==== */
+
 .green-degraded  {
     color: transparent;
     background: linear-gradient(
@@ -72,19 +74,20 @@ img {
 }
 
 /* ==== Header ==== */
+
 .header {
     background-color: var(--black);
-    color: var(--white);
-    min-height: 50rem;
+    color: var(--white)
 }
 
 .header-content {
     padding: var(--separation) 0;
     text-align: center;
 }
+
 @media (min-width: 768px) {
     .header-content {
-        padding: 10rem 0;
+        padding: calc( var(--separation) * 2 ) 0;
         text-align: left;
 
         display: grid;
@@ -92,30 +95,52 @@ img {
     }
 }
 
+.text-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+    .text-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
 .text-header p {
-    line-height: 2;
     margin: 0;
 }
 
-.text-header p:first-of-type {
+.text-header p:first-child {
     font-size: 2.6rem;
     font-weight: 700;
 }
 
 .text-header h1 {
     font-size: 6.4rem;
-    margin: 0 0 2rem 0;
+    margin: 0 0 4rem 0;
     line-height: 1;
 }
+
 @media (min-width: 768px) {
     .text-header h1 {
         font-size: 11rem;
+        margin: 0;
     }
 }
 
-.price {
-    font-size: 1.8rem;
+.description {
+    line-height: 2;
 }
+
+.price {
+    line-height: 1;
+    font-size: 1.8rem;
+    margin-bottom: 0;
+}
+
 .price span {
     font-weight: 900;
     font-size: 5rem;
@@ -125,10 +150,12 @@ img {
 .icons {
     padding: var(--separation) 0;
 }
+
 .icon {
     text-align: center;
     margin-bottom: var(--separation);
 }
+
 .icon:last-of-type {
     margin-bottom: 0;
 }
@@ -139,7 +166,8 @@ img {
         grid-template-columns: repeat( 3, 1fr );
         gap: 2rem;
     }
-    .icon {
+    .icon,
+    .icon p {
         margin-bottom: 0;
     }
 }
@@ -157,20 +185,19 @@ img {
 
 /* ==== About TechPRO ==== */
 .about {
+    padding: calc( var(--separation) * 2 ) 0;
+    color: var(--white);
+
     background-image: 
         linear-gradient( to bottom, transparent 0%, transparent 50%, var(--black) 50%, var(--black) 100%),
         url(../img/imagen-mujer.jpg);
     background-size: 
-        100%,
+        100%, 
         110rem;
-    background-position: 
-        right
-        top;
+    background-position: right top;
     background-repeat: no-repeat;
-
-    color: var(--white);
-    padding: var(--separation) 0;
 }
+
 @media (min-width: 768px) {
     .about {
         background-image: 
@@ -179,23 +206,19 @@ img {
         background-size: 
             100%,
             95rem;
-        background-position: 
-            right
-            center;
-        min-height: 50rem;
+        background-position: right center;
     }
 }
+
 @media (min-width: 1440px) {
     .about {
-    background-image: 
-        linear-gradient( to right, transparent 0%, transparent 50%, var(--black) 50%, var(--black) 100%),
-        url(../img/imagen-mujer.jpg);
-    background-size: 
-        100%,
-        51%;
-    background-position: 
-        left
-        center;
+        background-image: 
+            linear-gradient( to right, transparent 0%, transparent 50%, var(--black) 50%, var(--black) 100%),
+            url(../img/imagen-mujer.jpg);
+        background-size: 
+            100%,
+            51%;
+        background-position: left center;
     }
 }
 
@@ -204,6 +227,7 @@ img {
     grid-template-rows: repeat( 2, 1fr );
     row-gap: var(--separation);
 }
+
 @media (min-width: 768px) {
     .about-grid {
         grid-template-rows: unset;
@@ -213,6 +237,7 @@ img {
         column-gap: var(--separation);
     }
 }
+
 @media (min-width: 1440px) {
     .about-grid {
         column-gap: calc( var(--separation) * 2 );
@@ -222,6 +247,7 @@ img {
 .about-content {
     grid-row: 2 / 3;
 }
+
 @media (min-width: 1440px) {
     .about-content {
         grid-column: 2 / 3;
@@ -229,15 +255,18 @@ img {
 }
 
 .about-content h2 {
+    margin-top: 0;
     font-size: 4rem;
 }
 
 .about-content p {
-    line-height: 2;
+    margin-bottom: 0;
     font-size: 2rem;
+    line-height: 2;
 }
 
 /* ==== models ==== */
+
 .models {
     margin: var(--separation) auto;
 }
@@ -245,6 +274,7 @@ img {
 .models h2 {
     color: var(--primary);
     text-align: center;
+    margin-top: 0;
 }
 
 .models-list {
@@ -252,6 +282,7 @@ img {
     flex-direction: column-reverse;
     gap: 4rem;
 }
+
 @media (min-width: 768px) {
     .models-list {
         display: grid;
@@ -337,23 +368,23 @@ img {
 
 .newsletter {
     background-image: 
-        linear-gradient( to bottom, transparent 0%, transparent 48%, var(--black) 48%, var(--black) 100%),
+        linear-gradient( to bottom, transparent 0%, transparent 45%, var(--black) 45%, var(--black) 100%),
         url(../img/newsletter.jpg);
     background-size: 
         100%,
-        96rem;
+        100rem;
     background-position: top;
     background-repeat: no-repeat;
 
     color: var(--white);
-    padding: var(--separation) 0;
+    padding: calc( var(--separation) * 2 ) 0;
 }
 
 @media (min-width: 321px) {
     .newsletter {
         background-size: 
             100%,
-            90rem;
+            95rem;
     }
 }
 
@@ -368,21 +399,17 @@ img {
         background-position: 
             right
             center;
-        min-height: 50rem;
     }
 }
 
 @media (min-width: 1440px) {
     .newsletter {
     background-image: 
-    linear-gradient( to left, var(--black) 0%, var(--black) 50%, transparent 50%, transparent 100%),
-    url(../img/newsletter.jpg);
+        linear-gradient( to right, var(--black) 0%, var(--black) 50%, transparent 50%, transparent 100%),
+        url(../img/newsletter.jpg);
     background-size: 
         100%,
         51%;
-    background-position: 
-        left
-        center;
     }
 }
 
@@ -412,17 +439,19 @@ img {
 
 @media (min-width: 1440px) {
     .newsletter-content {
-        grid-column: 2 / 3;
+        grid-column: 1 / 2;
     }
 }
 
 .newsletter-text h2 {
+    margin-top: 0;
     font-size: 4rem;
 }
 
 .newsletter-text p {
-    line-height: 2;
+    margin-bottom: 4rem;
     font-size: 2rem;
+    line-height: 2;
 }
 
 .newsletter-form {
@@ -462,4 +491,4 @@ img {
     font-size: 2.4rem;
     color: var(--primary);
     padding: 2rem 0;
-  }
+}
