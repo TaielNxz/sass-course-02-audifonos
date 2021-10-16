@@ -188,37 +188,74 @@ img {
     padding: calc( var(--separation) * 2 ) 0;
     color: var(--white);
 
-    background-image: 
-        linear-gradient( to bottom, transparent 0%, transparent 50%, var(--black) 50%, var(--black) 100%),
-        url(../img/imagen-mujer.jpg);
     background-size: 
         100%, 
         110rem;
     background-position: right top;
     background-repeat: no-repeat;
 }
+.notavif.notwebp .about{
+    background-image: 
+        linear-gradient( to bottom, transparent 0%, transparent 50%, var(--black) 50%, var(--black) 100%),
+        url(../img/imagen-mujer.jpg);
+}
+.avif .about {
+    background-image: 
+        linear-gradient( to bottom, transparent 0%, transparent 50%, var(--black) 50%, var(--black) 100%),
+        url(../img/imagen-mujer.avif);
+}
+.webp .about {
+    background-image: 
+        linear-gradient( to bottom, transparent 0%, transparent 50%, var(--black) 50%, var(--black) 100%),
+        url(../img/imagen-mujer.webp);  
+}
+
 
 @media (min-width: 768px) {
     .about {
-        background-image: 
-            linear-gradient( to left, transparent 0%, transparent 50%, var(--black) 50%, var(--black) 100%),
-            url(../img/imagen-mujer.jpg);
         background-size: 
             100%,
             95rem;
         background-position: right center;
     }
+    .notavif.notwebp .about{
+        background-image: 
+            linear-gradient( to left, transparent 0%, transparent 50%, var(--black) 50%, var(--black) 100%),
+            url(../img/imagen-mujer.jpg);
+    }
+    .avif .about {
+        background-image: 
+            linear-gradient( to left, transparent 0%, transparent 50%, var(--black) 50%, var(--black) 100%),
+            url(../img/imagen-mujer.avif);
+    }
+    .webp .about {
+        background-image: 
+            linear-gradient( to left, transparent 0%, transparent 50%, var(--black) 50%, var(--black) 100%),
+            url(../img/imagen-mujer.webp);  
+    }
 }
 
 @media (min-width: 1440px) {
     .about {
-        background-image: 
-            linear-gradient( to right, transparent 0%, transparent 50%, var(--black) 50%, var(--black) 100%),
-            url(../img/imagen-mujer.jpg);
         background-size: 
             100%,
             51%;
         background-position: left center;
+    }
+    .notavif.notwebp .about{
+        background-image: 
+            linear-gradient( to right, transparent 0%, transparent 50%, var(--black) 50%, var(--black) 100%),
+            url(../img/imagen-mujer.jpg);
+    }
+    .avif .about {
+        background-image: 
+            linear-gradient( to right, transparent 0%, transparent 50%, var(--black) 50%, var(--black) 100%),
+            url(../img/imagen-mujer.avif);
+    }
+    .webp .about {
+        background-image: 
+            linear-gradient( to right, transparent 0%, transparent 50%, var(--black) 50%, var(--black) 100%),
+            url(../img/imagen-mujer.webp);  
     }
 }
 
@@ -367,9 +404,6 @@ img {
 /* ==== NewsLetter ==== */
 
 .newsletter {
-    background-image: 
-        linear-gradient( to bottom, transparent 0%, transparent 45%, var(--black) 45%, var(--black) 100%),
-        url(../img/newsletter.jpg);
     background-size: 
         100%,
         100rem;
@@ -378,6 +412,21 @@ img {
 
     color: var(--white);
     padding: calc( var(--separation) * 2 ) 0;
+}
+.notavif.notwebp .newsletter{
+    background-image: 
+        linear-gradient( to bottom, transparent 0%, transparent 45%, var(--black) 45%, var(--black) 100%),
+        url(../img/newsletter.jpg);
+}
+.avif .newsletter {
+    background-image: 
+        linear-gradient( to bottom, transparent 0%, transparent 45%, var(--black) 45%, var(--black) 100%),
+        url(../img/newsletter.avif);
+}
+.webp .newsletter {
+    background-image: 
+        linear-gradient( to bottom, transparent 0%, transparent 45%, var(--black) 45%, var(--black) 100%),
+        url(../img/newsletter.webp);
 }
 
 @media (min-width: 321px) {
@@ -390,26 +439,53 @@ img {
 
 @media (min-width: 768px) {
     .newsletter {
-        background-image: 
-            linear-gradient( to right, var(--black) 0%, var(--black) 50%, transparent 50%, transparent 100%),
-            url(../img/newsletter.jpg);
         background-size: 
             100%,
             contain;
         background-position: 
-            right
+            left
             center;
+    }
+    .notavif.notwebp .newsletter{
+        background-image: 
+            linear-gradient( to left, var(--black) 0%, var(--black) 50%, transparent 50%, transparent 100%),
+            url(../img/newsletter.jpg);
+    }
+    .avif .newsletter {
+        background-image: 
+            linear-gradient( to left, var(--black) 0%, var(--black) 50%, transparent 50%, transparent 100%),
+            url(../img/newsletter.avif);
+    }
+    .webp .newsletter {
+        background-image: 
+            linear-gradient( to left, var(--black) 0%, var(--black) 50%, transparent 50%, transparent 100%),
+            url(../img/newsletter.webp);
     }
 }
 
 @media (min-width: 1440px) {
     .newsletter {
-    background-image: 
-        linear-gradient( to right, var(--black) 0%, var(--black) 50%, transparent 50%, transparent 100%),
-        url(../img/newsletter.jpg);
-    background-size: 
-        100%,
-        51%;
+        background-size: 
+            100%,
+            51%;
+        background-position: 
+            right
+            center;
+    }
+    .notavif.notwebp .newsletter{
+        background-image: 
+            linear-gradient( to right, var(--black) 0%, var(--black) 50%, transparent 50%, transparent 100%),
+            url(../img/newsletter.jpg);
+    }
+    .avif .newsletter {
+        background-image: 
+            linear-gradient( to right, var(--black) 0%, var(--black) 50%, transparent 50%, transparent 100%),
+            url(../img/newsletter.avif);
+    }
+    .webp .newsletter {
+        background-image: 
+            linear-gradient( to right, var(--black) 0%, var(--black) 50%, transparent 50%, transparent 100%),
+            url(../img/newsletter.webp);
     }
 }
 
@@ -435,6 +511,12 @@ img {
 
 .newsletter-content {
     grid-row: 2 / 3;
+}
+
+@media (min-width: 768px) {
+    .newsletter-content {
+        grid-column: 2 / 3;
+    } 
 }
 
 @media (min-width: 1440px) {
