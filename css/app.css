@@ -9,8 +9,8 @@
   
     --separation: 5rem;
   
-    --fuentePrincipal: "Roboto", sans-serif;
-    --fuenteSecundaria: "Lato", sans-serif;
+    --primaryFont: "Roboto", sans-serif;
+    --secondaryFont: "Lato", sans-serif;
 }
 
 html {
@@ -23,7 +23,7 @@ html {
     box-sizing: inherit;
 }
 body {
-    font-family: var(--fuentePrincipal);
+    font-family: var(--primaryFont);
     font-size: 1.6rem;
     line-height: 1.5;
 }
@@ -39,7 +39,7 @@ h1,
 h2,
 h3 {
     font-weight: 900;
-    font-family: var(--fuenteSecundaria);
+    font-family: var(--secondaryFont);
     margin: calc( var(--separation) / 2 ) 0;
 }
 h1 {
@@ -452,3 +452,14 @@ img {
 .newsletter-form [type="submit"]:hover {
     background-color: var(--primaryDark);
 }
+
+/* ==== Footer ==== */
+
+.footer p {
+    text-align: center;
+    font-family: var(--secondaryFont);
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    color: var(--primary);
+    padding: 2rem 0;
+  }
