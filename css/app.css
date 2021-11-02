@@ -1,56 +1,42 @@
 :root {
-    --primary: #1073ba;
+    /* website colors */
+    --primary    : hsl(205, 84%, 40%);
     --primaryDark: hsl(205, 84%, 30%);
-    --secondary: #00da55;
-    --grey: #3b3b3b;
+    --secondary:hsl(143, 100%, 43%);
+
+    /* colors */
+    --grey: hsl(0, 0%, 23%);
     --white: #ffffff;
     --black: #1f1e1e;
     --greylight: #e1e1e1;
   
+    /* units */
     --separation: 5rem;
   
+    /* fonts */
     --primaryFont: "Roboto", sans-serif;
     --secondaryFont: "Lato", sans-serif;
 }
 
+/* ==========================================================================
+  Global Styles
+  ========================================================================== */
+
 html {
     box-sizing: border-box;
-    font-size: 62.5%;
+    font-size: 62.5%; /* 1rem = 10px */
 }
+
 *,
 *:before,
 *:after {
     box-sizing: inherit;
 }
+
 body {
     font-family: var(--primaryFont);
     font-size: 1.6rem;
     line-height: 1.5;
-}
-
-/* ==== Globales ==== */
-
-.conteiner {
-    max-width: 120rem;
-    width: 90%;
-    margin: 0 auto;
-}
-
-h1,
-h2,
-h3 {
-    font-weight: 900;
-    font-family: var(--secondaryFont);
-    margin: calc( var(--separation) / 2 ) 0;
-}
-h1 {
-    font-size: 4.4rem;
-}
-h2 {
-    font-size: 3.6rem;
-}
-h3 {
-    font-size: 2.8rem;
 }
 
 img {
@@ -60,7 +46,39 @@ img {
     display: block;
 }
 
-/* ==== Degraded ==== */
+/* ==========================================================================
+  Typography
+  ========================================================================== */
+
+h1,
+h2,
+h3 {
+    font-weight: 900;
+    font-family: var(--secondaryFont);
+    margin: calc( var(--separation) / 2 ) 0;
+}
+
+h1 {
+    font-size: 4.4rem;
+}
+
+h2 {
+    font-size: 3.6rem;
+}
+
+h3 {
+    font-size: 2.8rem;
+}
+
+/* ==========================================================================
+  Utility classes 
+  ========================================================================== */
+
+.conteiner {
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
 
 .green-degraded  {
     color: transparent;
@@ -73,7 +91,9 @@ img {
     background-clip: text;
 }
 
-/* ==== Header ==== */
+/* ==========================================================================
+  .header 
+  ========================================================================== */
 
 .header {
     background-color: var(--black);
@@ -95,18 +115,13 @@ img {
     }
 }
 
+/* .header .text-header
+   ========================================================================== */
+
 .text-header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-@media (min-width: 768px) {
-    .text-header {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
 }
 
 .text-header p {
@@ -146,10 +161,16 @@ img {
     font-size: 5rem;
 }
 
-/* ==== Icons ==== */
+/* ==========================================================================
+    .icons
+    ========================================================================== */
+
 .icons {
     padding: var(--separation) 0;
 }
+
+/* .icons .icon
+    ========================================================================== */
 
 .icon {
     text-align: center;
@@ -183,7 +204,10 @@ img {
     color: var(--primary);
 }
 
-/* ==== About TechPRO ==== */
+/* ==========================================================================
+    .about
+    ========================================================================== */
+
 .about {
     padding: calc( var(--separation) * 2 ) 0;
     color: var(--white);
@@ -259,6 +283,9 @@ img {
     }
 }
 
+/* .about .about-grid
+   ========================================================================== */
+
 .about-grid {
     display: grid;
     grid-template-rows: repeat( 2, 1fr );
@@ -281,6 +308,9 @@ img {
     }
 }
 
+/* .about .about-grid .about-content
+   ========================================================================== */
+
 .about-content {
     grid-row: 2 / 3;
 }
@@ -302,7 +332,9 @@ img {
     line-height: 2;
 }
 
-/* ==== models ==== */
+/* ==========================================================================
+    .models
+    ========================================================================== */
 
 .models {
     margin: var(--separation) auto;
@@ -313,6 +345,9 @@ img {
     text-align: center;
     margin-top: 0;
 }
+
+/* .models .models-list
+    ========================================================================== */
 
 .models-list {
     display: flex;
@@ -328,7 +363,8 @@ img {
     }
 }
 
-/* ==== models - model ==== */
+/* .models .models-list .model
+    ========================================================================== */
 
 .model {
     padding: 2rem;
@@ -401,7 +437,9 @@ img {
 }
 
 
-/* ==== NewsLetter ==== */
+/* ==========================================================================
+    .newsletter
+    ========================================================================== */
 
 .newsletter {
     background-size: 
@@ -489,6 +527,9 @@ img {
     }
 }
 
+/* .newsletter .newsletter-grid
+   ========================================================================== */
+
 .newsletter-grid {
     display: grid;
     grid-template-rows: repeat( 2, 1fr );
@@ -509,6 +550,9 @@ img {
     }
 }
 
+/* .newsletter-grid .newsletter-content
+   ========================================================================== */
+
 .newsletter-content {
     grid-row: 2 / 3;
 }
@@ -525,6 +569,9 @@ img {
     }
 }
 
+/* .newsletter-content .newsletter-text
+   ========================================================================== */
+
 .newsletter-text h2 {
     margin-top: 0;
     font-size: 4rem;
@@ -535,6 +582,9 @@ img {
     font-size: 2rem;
     line-height: 2;
 }
+
+/* .newsletter-content .newsletter-form
+   ========================================================================== */
 
 .newsletter-form {
     display: flex;
@@ -564,7 +614,9 @@ img {
     background-color: var(--primaryDark);
 }
 
-/* ==== Footer ==== */
+/* ==========================================================================
+    footer
+    ========================================================================== */
 
 .footer p {
     text-align: center;
