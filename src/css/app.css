@@ -229,17 +229,6 @@ h3 {
     url(../img/imagen-mujer.jpg);
 }
 
-.avif .about {
-  background-image: linear-gradient(
-      to bottom,
-      transparent 0%,
-      transparent 50%,
-      var(--black) 50%,
-      var(--black) 100%
-    ),
-    url(../img/imagen-mujer.avif);
-}
-
 .webp .about {
   background-image: linear-gradient(
       to bottom,
@@ -249,6 +238,17 @@ h3 {
       var(--black) 100%
     ),
     url(../img/imagen-mujer.webp);
+}
+
+.avif .about {
+  background-image: linear-gradient(
+      to bottom,
+      transparent 0%,
+      transparent 50%,
+      var(--black) 50%,
+      var(--black) 100%
+    ),
+    url(../img/imagen-mujer.avif);
 }
 
 @media (min-width: 768px) {
@@ -266,16 +266,6 @@ h3 {
       ),
       url(../img/imagen-mujer.jpg);
   }
-  .avif .about {
-    background-image: linear-gradient(
-        to left,
-        transparent 0%,
-        transparent 50%,
-        var(--black) 50%,
-        var(--black) 100%
-      ),
-      url(../img/imagen-mujer.avif);
-  }
   .webp .about {
     background-image: linear-gradient(
         to left,
@@ -285,6 +275,16 @@ h3 {
         var(--black) 100%
       ),
       url(../img/imagen-mujer.webp);
+  }
+  .avif .about {
+    background-image: linear-gradient(
+        to left,
+        transparent 0%,
+        transparent 50%,
+        var(--black) 50%,
+        var(--black) 100%
+      ),
+      url(../img/imagen-mujer.avif);
   }
 }
 
@@ -303,16 +303,6 @@ h3 {
       ),
       url(../img/imagen-mujer.jpg);
   }
-  .avif .about {
-    background-image: linear-gradient(
-        to right,
-        transparent 0%,
-        transparent 50%,
-        var(--black) 50%,
-        var(--black) 100%
-      ),
-      url(../img/imagen-mujer.avif);
-  }
   .webp .about {
     background-image: linear-gradient(
         to right,
@@ -322,6 +312,16 @@ h3 {
         var(--black) 100%
       ),
       url(../img/imagen-mujer.webp);
+  }
+  .avif .about {
+    background-image: linear-gradient(
+        to right,
+        transparent 0%,
+        transparent 50%,
+        var(--black) 50%,
+        var(--black) 100%
+      ),
+      url(../img/imagen-mujer.avif);
   }
 }
 
@@ -501,17 +501,6 @@ h3 {
     url(../img/newsletter.jpg);
 }
 
-.avif .newsletter {
-  background-image: linear-gradient(
-      to bottom,
-      transparent 0%,
-      transparent 45%,
-      var(--black) 45%,
-      var(--black) 100%
-    ),
-    url(../img/newsletter.avif);
-}
-
 .webp .newsletter {
   background-image: linear-gradient(
       to bottom,
@@ -521,6 +510,17 @@ h3 {
       var(--black) 100%
     ),
     url(../img/newsletter.webp);
+}
+
+.avif .newsletter {
+  background-image: linear-gradient(
+      to bottom,
+      transparent 0%,
+      transparent 45%,
+      var(--black) 45%,
+      var(--black) 100%
+    ),
+    url(../img/newsletter.avif);
 }
 
 @media (min-width: 321px) {
@@ -546,17 +546,6 @@ h3 {
       url(../img/newsletter.jpg);
   }
 
-  .avif .newsletter {
-    background-image: linear-gradient(
-        to left,
-        var(--black) 0%,
-        var(--black) 50%,
-        transparent 50%,
-        transparent 100%
-      ),
-      url(../img/newsletter.avif);
-  }
-
   .webp .newsletter {
     background-image: linear-gradient(
         to left,
@@ -566,6 +555,17 @@ h3 {
         transparent 100%
       ),
       url(../img/newsletter.webp);
+  }
+
+  .avif .newsletter {
+    background-image: linear-gradient(
+        to left,
+        var(--black) 0%,
+        var(--black) 50%,
+        transparent 50%,
+        transparent 100%
+      ),
+      url(../img/newsletter.avif);
   }
 }
 
@@ -586,17 +586,6 @@ h3 {
       url(../img/newsletter.jpg);
   }
 
-  .avif .newsletter {
-    background-image: linear-gradient(
-        to right,
-        var(--black) 0%,
-        var(--black) 50%,
-        transparent 50%,
-        transparent 100%
-      ),
-      url(../img/newsletter.avif);
-  }
-
   .webp .newsletter {
     background-image: linear-gradient(
         to right,
@@ -606,6 +595,17 @@ h3 {
         transparent 100%
       ),
       url(../img/newsletter.webp);
+  }
+  
+  .avif .newsletter {
+    background-image: linear-gradient(
+        to right,
+        var(--black) 0%,
+        var(--black) 50%,
+        transparent 50%,
+        transparent 100%
+      ),
+      url(../img/newsletter.avif);
   }
 }
 
